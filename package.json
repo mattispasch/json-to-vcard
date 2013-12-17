@@ -3,6 +3,13 @@
 	"description" : "Converts a JSON-Contact into a vCard (one-way for now) - see features for details",
 	"version" : "0.0.1",
 	"author" : "Mattis Pasch",
+	"scripts" : {
+		"test" : "cucumber.js --require features/step_definitions/contact_steps.js --require features/support/world.js"
+	},
+	"repository" : {
+        "type" : "git",
+        "url" : "https://github.com/mattispasch/json-to-vcard.git"
+    },
 	"devDependencies" : {
 		"cucumber": "latest"
   	}
