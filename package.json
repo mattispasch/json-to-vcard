@@ -1,0 +1,9 @@
+{ 
+	"name" : "json-to-vcard",
+	"description" : "Converts a JSON-Contact into a vCard (one-way for now) - see features for details",
+	"version" : "0.0.1",
+	"author" : "Mattis Pasch",
+	"devDependencies" : {
+		"cucumber": "latest"
+  	}
+}
