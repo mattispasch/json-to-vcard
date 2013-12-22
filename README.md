@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mattispasch/json-to-vcard.png)](https://travis-ci.org/mattispasch/json-to-vcard)
+
 json-to-vcard
 =============
 
