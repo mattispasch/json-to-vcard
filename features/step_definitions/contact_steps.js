@@ -94,6 +94,24 @@ var contactSteps = function() {
 			callback(err);
 		}
 	});
+	
+	this.When(/^I try to convert the vCard to JSON$/, function(callback) {
+		try {
+			this.json = this.vcard2json(this.vcard);
+		} catch (e) {
+			this.catchedError = e;
+		}
+		callback();
+	});
+
+		this.Then(/^an exception is thrown$/, function(callback) {
+			if(this.catchedError !== undefined) {
+				log("Expected exception was thrown: " + this.catchedError);
+				callback();
+			} else {
+				callback("Exception was expected, but no error was thrown...");
+			}
+		});
 
 	this.Then(/^I'll get the following vCard:$/, function(vcard, callback) {
 		if (this.vcard !== vcard) {
